@@ -40,17 +40,17 @@
 len = operacija nad stringom / prebrojavanje karaktera
 '''
 
-primer = "zadatak1"
+# primer = "zadatak1"
 
 # for indeks in range(len(primer)):
 #     print(primer[indeks], end=" ")
 
-broj_karaktera = len(primer)
-print(broj_karaktera)
-indeks = 0
-while indeks < broj_karaktera:
-    print(primer[indeks]) 
-    indeks += 1
+# broj_karaktera = len(primer)
+# print(broj_karaktera)
+# indeks = 0
+# while indeks < broj_karaktera:
+#     print(primer[indeks]) 
+#     indeks += 1
 
 # korisnicko_ime = "admin"
 # # uneto_kor_ime = input("Unesi korisnicko ime: ").lower()
@@ -61,3 +61,9 @@ while indeks < broj_karaktera:
 #        print("Pogresni podaci")
 
 
+# Sekvence vezba 11.30.2022
+proizvodi = ["Telefon", "Tv","Laptop"]
+cene      = [   100,    200,   300]
+
+for x in range(len(proizvodi)):
+    print(proizvodi[x], cene[x])
