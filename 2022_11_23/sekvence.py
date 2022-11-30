@@ -146,4 +146,4 @@ while True:
     if komanda == 4:
         break
 #Tuples ()
-
+osoba = ("Sofija", "25")
