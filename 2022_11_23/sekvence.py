@@ -62,8 +62,17 @@ len = operacija nad stringom / prebrojavanje karaktera
 
 
 # Sekvence vezba 11.30.2022
-proizvodi = ["Telefon", "Tv","Laptop"]
-cene      = [   100,    200,   300]
+# proizvodi = ["Telefon", "Tv","Laptop"]
+# cene      = [   100,    200,   300]
 
-for x in range(len(proizvodi)):
-    print(proizvodi[x], cene[x])
+# for x in range(len(proizvodi)): #len para ir producto por producto de la lista.
+#     print(proizvodi[x], cene[x]) 
+
+automobili = ["Audi", "BMW", "Yugo", "Citroen", "Kia", "Peugot"]
+
+for i in range(len(automobili)): # for i in range(6): ...
+    print("Automobil:", automobili[i])
+    if i == 3:
+        print('Aleksandra vozi automobil', automobili[i],'!')
+    else:
+        continue
