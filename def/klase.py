@@ -80,3 +80,38 @@ moja_firma.zaposli_nove(10)
 print(moja_firma.broj_zaposlenih)
 moja_firma.otkaz(15)
 moja_firma.preuzmi_projekat(app3)
+
+#PROIZVOD - NAZIV, OPIS, CENA
+# KORPA - SPISAK_PROIZVODA, UKUPNA_CENA
+
+class Proizvod:
+    def __init__(self, naziv, opis, cena):
+        self.naziv = naziv
+        self.opis = opis
+        self.cena = cena
+
+
+#korpa u inicijalizatori prihvata listu proizvoda tipa Proizvod
+
+class Korpa:
+    def __init__(self, spisak_proizvoda):
+        self.spisak_proizvoda = spisak_proizvoda #svojstvo 1
+        res = 0
+        for pr in spisak_proizvoda:
+            res += pr.cena
+
+        self.ukupna_cena = res      #svojstvo 2
+
+pr1 = Proizvod("Patike", "Fudbalske patike", 27000)
+pr2 = Proizvod("Patike", "Kosarkaske patike", 15000)
+pr3 = Proizvod("Papuce", "Crocs", 5000)
+
+lista_pr = []
+lista_pr.append(pr1)
+lista_pr.append(pr2)
+
+korpa = Korpa(lista_pr)
+print(korpa.ukupna_cena)
+
+    
+    
